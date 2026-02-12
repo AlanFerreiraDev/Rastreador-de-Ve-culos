@@ -57,21 +57,30 @@ Formato base:
 <tipo>(<escopo-opcional>): <descricao-curta>
 ```
 
-Exemplos prontos para copiar e adaptar:
+Explicacoes em portugues (com exemplos de commit em ingles):
 
-```text
-build(deps): update kafka client version
-chore(repo): update git hooks setup
-ci(github-actions): add commit validation job
-docs(readme): add commit message templates
-feat(tracking): add endpoint to list active vehicles
-fix(api): handle null tracker id on startup
-perf(query): optimize vehicle search with index
-refactor(service): split tracking service responsibilities
-revert: revert "feat(tracking): add endpoint to list active vehicles"
-style(lint): run code formatting rules
-test(tracking): add unit tests for gps parser
-```
+- `build`: mudancas de build, dependencias ou empacotamento.
+  Exemplo: `build(deps): update kafka client version`
+- `chore`: tarefas internas sem impacto direto de funcionalidade.
+  Exemplo: `chore(repo): update git hooks setup`
+- `ci`: mudancas em pipeline, workflow ou automacao de CI/CD.
+  Exemplo: `ci(github-actions): add commit validation job`
+- `docs`: alteracoes apenas de documentacao.
+  Exemplo: `docs(readme): add commit message templates`
+- `feat`: nova funcionalidade.
+  Exemplo: `feat(tracking): add endpoint to list active vehicles`
+- `fix`: correcao de bug.
+  Exemplo: `fix(api): handle null tracker id on startup`
+- `perf`: melhoria de performance sem mudar comportamento funcional.
+  Exemplo: `perf(query): optimize vehicle search with index`
+- `refactor`: reorganizacao de codigo sem mudar comportamento externo.
+  Exemplo: `refactor(service): split tracking service responsibilities`
+- `revert`: desfaz um commit anterior.
+  Exemplo: `revert: revert "feat(tracking): add endpoint to list active vehicles"`
+- `style`: mudancas de formatacao/estilo (sem alterar logica).
+  Exemplo: `style(lint): run code formatting rules`
+- `test`: criacao ou ajuste de testes.
+  Exemplo: `test(tracking): add unit tests for gps parser`
 
 Template para breaking change:
 
